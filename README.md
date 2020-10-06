@@ -65,8 +65,12 @@ git clone "https://github.com/Tariq96/Waiter_Robot.git"
 ```
 catkin_make
 ```
-
-
+5- Running simulation
+```
+roslaunch waiter_bot restaurant.launch
+roslaunch waiter_bot navigation.launch
+rosrun waiterbot gui.py
+```
 
 
 ## refrences 
