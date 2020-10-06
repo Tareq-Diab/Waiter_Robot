@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <!-- gazebo settings -->    
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find waiter_bot)worlds/restaurant2.world"/>
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="recording" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>    
+
+    <!-- robot settings -->
+
+
+    <!-- coverting xacro to urdf -->
+
+    <param name="robot_description" command= "$(find xacro)/xacro.py $(find waiter_bot)/urdf/bot.urdf.xacro" />
+
+    <!-- spawn node  -->   
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"  output="screen" 
+          args= "-param robot_description -urdf -model bot -x 0 -y 0 -z 10 -R 0 -P 0 -Y -4.71">
+        
+    </node>
+        
+            
+                
+</launch>

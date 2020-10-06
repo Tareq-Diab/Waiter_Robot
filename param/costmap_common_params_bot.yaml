@@ -1,0 +1,23 @@
+#These parameters set thresholds on obstacle information
+#put into the costmap. The "obstacle_range" parameter determines 
+#the maximum range sensor reading that will result in an obstacle 
+#being put into the costmap. Here, we have it set at 2.5 meters, 
+#which means that the robot will only update its map with information 
+#about obstacles that are within 2.5 meters of the base. The "raytrace_range" 
+#parameter determines the range to which we will raytrace freespace given a 
+#sensor reading. Setting it to 3.0 meters as we have above means that the robot 
+#will attempt to clear out space in front of it up to 3.0 meters away given a sensor reading.
+
+obstacle_range: 3.0
+raytrace_range: 3.5
+#----------------------------------------------------------------------------------------------
+  
+footprint: [[-0.20, -0.25], [-0.20, 0.25], [0.2, 0.25], [0.2, -0.25]]
+#robot_radius: 0.17
+
+inflation_radius: 1
+cost_scaling_factor: 2
+
+map_type: costmap
+observation_sources: scan
+scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}

@@ -1,0 +1,12 @@
+<package>
+  <description brief="waiter_bot">
+
+     waiter_bot
+
+  </description>
+  <author>Tareq Ahmed</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/waiter_bot</url>
+
+</package>
