@@ -4,6 +4,9 @@ A robot used to deliver food from resturant kitchen to tables Autonomously.This 
 This robot uses ROS's navigation stack to move around in it's environment and calculate the best route around static and dynamic obstacles. 
 ![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/GIF-201006_133905.gif)
 ## Operation Flow
+1- mapping the restaurant environment to localize tabels and static object using slam algorithm.
+
+2- navigation using the created map. 
 
 ## mapping
 The robot is used for the first time to create a map of the restaurant in order to use it later for navigation around obstacles Autonomously. using the Slam algorithm along with odometry sensors such as encoders , IMU and lidar , a map is created and saved for later use.
@@ -28,6 +31,15 @@ rosrun waiterbot gui.py
 ```
 ![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/GIF-201006_135716.gif)
 
+## navigation settings
+note that the robot navigation stack is set to have inflation parameter set to one meter , which means the navigation stack will try to create pathes far from obstacles by 1 meter. notice robot movemet in the folowing GIF. 
+othere parameters like robot speed , footprint , goal tolerance ...etc. can be tuned in nice gui using the the folowing command:
+```
+rosrun rqt_reconfigure rqt_reconfigure
+```
+
+![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/GIF-201006_135319.gif)
+
 ## frame structure
 The robot frame is built around the main chassis all robot parts are refrenced to the main frame.
 ![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/robot_frames.png)
@@ -39,8 +51,10 @@ The robot frame is built around the main chassis all robot parts are refrenced t
 ## installing / running simulation
 
 1- install ros.
+http://wiki.ros.org/melodic/Installation/Ubuntu
 
 2- install gazebo.
+http://gazebosim.org/
 
 3- download the project.
 ```
@@ -53,7 +67,11 @@ catkin_make
 ```
 
 
-![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/GIF-201006_135319.gif)
+
 
 
 ## refrences 
+
+1- http://wiki.ros.org/navigation?distro=noetic
+
+2- http://gazebosim.org/tutorials
