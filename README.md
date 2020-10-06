@@ -28,7 +28,13 @@ rosrun waiterbot gui.py
 ```
 ![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/GIF-201006_135716.gif)
 
-## 
+## frame structure
+The robot frame is built around the main chassis all robot parts are refrenced to the main frame.
+![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/robot_frames.png)
+
+## topics structure
+![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/rosgraph.png)
+
 
 ## installing / running simulation
 install ros 
