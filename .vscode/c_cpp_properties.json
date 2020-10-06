@@ -1,23 +1,28 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "",
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "includePath": [
-        "/home/tareq/catkin_ws/devel/include/**",
-        "/home/tareq/catkin_ws2/devel/include/**",
-        "/opt/ros/melodic/include/**",
-        "/home/tareq/catkin_ws/src/my_simulations/include/**",
-        "/home/tareq/catkin_ws/src/ros_basics_tutorials/include/**",
-        "/home/tareq/catkin_ws2/src/ros_essentials_cpp/include/**",
-        "/home/tareq/catkin_ws/src/simulation_gazebo/include/**",
-        "/home/tareq/catkin_ws/src/turtlebot3_fake/include/**",
-        "/home/tareq/catkin_ws/src/turtlebot3_gazebo/include/**",
-        "/usr/include/**"
-      ],
-      "name": "ROS"
-    }
-  ]
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/tareq/catkin_ws/devel/include/**",
+                "/home/tareq/catkin_ws2/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/tareq/catkin_ws/src/my_simulations/include/**",
+                "/home/tareq/catkin_ws/src/ros_basics_tutorials/include/**",
+                "/home/tareq/catkin_ws2/src/ros_essentials_cpp/include/**",
+                "/home/tareq/catkin_ws/src/simulation_gazebo/include/**",
+                "/home/tareq/catkin_ws/src/turtlebot3_fake/include/**",
+                "/home/tareq/catkin_ws/src/turtlebot3_gazebo/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
 }
