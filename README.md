@@ -38,14 +38,16 @@ The robot frame is built around the main chassis all robot parts are refrenced t
 
 ## installing / running simulation
 
-1- install ros
-2- install gazebo
-3- git clone my rebo
+1- install ros.
+
+2- install gazebo.
+
+3- download the project.
 ```
 inside your catkin workspace type in a terminal :
 git clone "https://github.com/Tariq96/Waiter_Robot.git"
 ```
-4- compile all the project files
+4- compile all the project files.
 ```
 catkin_make
 ```
