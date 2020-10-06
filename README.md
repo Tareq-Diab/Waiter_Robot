@@ -9,11 +9,11 @@ This robot uses ROS's navigation stack to move around in it's environment and ca
 The robot is used for the first time to create a map of the restaurant in order to use it later for navigation around obstacles Autonomously. using the Slam algorithm along with odometry sensors such as encoders , IMU and lidar , a map is created and saved for later use.
 
 mapping commands :
-'''
+```
 roslaunch waiter_bot restaurant.launch
 roslaunch waiter_bot slam.launch
 rosrun waiter_bot pub.py
-'''
+```
 
 ![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/GIF-201006_134455.gif)
 
@@ -25,9 +25,9 @@ for now the table positiong in the restaurant is shown in the picture.
 ![]()
 
 using the Gui :
-'''
+```
 rosrun waiterbot gui.py
-'''
+```
 
 
 ![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/GIF-201006_135716.gif)
