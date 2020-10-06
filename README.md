@@ -21,7 +21,9 @@ rosrun waiter_bot pub.py
 commands to the robot are bassed through a simple GUI ment to show on a screen in the kitchen or the robot, it's used to point the robot to it's next target position in it's environment. This part assumes that the restaurant table position is fixed in order to navigate around the restaurant relaying only on lidat and odometry sensors. dynamic table positions in therestaurant will require a layer of computer vision software in order to loalize the variable table positions. [adding cameras and table localization stack is targeted in the next update to allow dynamic restaurant layout]
 for now the table positiong in the restaurant is shown in the picture. 
 <p align="center">
+  h
 ![](https://github.com/Tariq96/Waiter_Robot/blob/master/pictures/20201006_151235.png)
+
 </p>
 using the Gui :
 ```
