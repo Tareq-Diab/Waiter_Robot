@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 
-<robot name="waiter_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
 
@@ -36,7 +36,7 @@
     <visual name='chassis_visual'>
       <origin xyz="-0.205 -0.358 0" rpy="1.57 0 1.57"/>
       <geometry>
-        <mesh filename="package://dualwheelbot/meshes/marses_robot.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://waiter_bot/meshes/marses_robot.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     
@@ -213,7 +213,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://dualwheelbot/meshes/hokuyo.dae"/>
+        <mesh filename="package://waiter_bot/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
 
